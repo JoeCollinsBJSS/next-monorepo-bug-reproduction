@@ -1,0 +1,47 @@
+### OSX ###
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+
+**/node_modules
+
+# explicitly don't track *_output.txt files generated from local tf runs
+*_output.txt
+
+# explicitly don't track files we have chosen to ignore by suffixing with .gitignorethis
+*.gitignorethis*
+
+# don't track zips
+*.zip
+
+# don't track dynamic environment files (they're dynamic, that's the point!)
+env_eu-west-2_de-*.tfvars
+**/templates/dashboard-*.tmpl.json
+
+# don't track eslint local changes
+.eslintcache
+
+# VSCode Cache
+.vscode
+!.vscode/settings.json
+
+# don't track ephemeral local build files
+.webpack
+.next
+dist*/
+static_content/
+.turbo/
+reports/
+target/
+
+# don't track local developer environment log files from vscode etc
+.vscode/*.log
+
+# Ignore temporary data files
+**/data/temp
+
+# typescript
+*.tsbuildinfo
+
+# Ignore auto-generated files
+generated
