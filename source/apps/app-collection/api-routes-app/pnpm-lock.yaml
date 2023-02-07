@@ -24,6 +24,11 @@ devDependencies:
 
 packages:
 
+  # all packages in subdirs of apps/
+  - 'source/apps/**'
+  # all packages in direct subdirs of packages/
+  - 'packages/**'
+  
   /@next/env/13.1.2:
     resolution: {integrity: sha512-PpT4UZIX66VMTqXt4HKEJ+/PwbS+tWmmhZlazaws1a+dbUA5pPdjntQ46Jvj616i3ZKN9doS9LHx3y50RLjAWg==}
     dev: false
